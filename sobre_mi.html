@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/perfil.png" type="image/jpg" sizes="10x10">
+	<link rel="stylesheet" href="https://unpkg.com/primeflex@3.1.0/primeflex.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="styles/style_sobre_mi.css">
+	<title>YanetAngeles</title>
+</head>
+<body>
+	
+	<section name="back">
+		<a href="index.html" style="font-size: 3vw;">
+			<img src="images/back.png" class="icon" alt="regresar" style="scale: 5px;">
+			Principal
+		</a>
+	</section>
+
+	<section name="nav"> <!-- section nav-->
+		<nav class="flex justify-content-center">
+		    <a href="index.html" class="menu">Principal</a>
+		    <a href="mi_portafolio.html" class="menu">Mi portafolio</a>
+		    <a href="#" class="menu">Sobre mi</a>
+		</nav>
+	</section>
+
+
+	<div class="container-fluid">
+		<section name="contenido"><!-- section contenido--> 
+			<div class="grid">
+		    	<div class="col-fixed" style="width:60vw; margin: 2vw 1vw 1vw 2vw;"><!-- Primera columna Vista Escritorio-->
+		    		<h5>
+		    		Soy la combinación de mis recuerdos, experiencias y creencias,<span>me gusta enfocarme, organizarme</span> y hacer que las cosas que hago me apasionen. 
+					Soy egresada de la carrera de ingenieria en computación, puedes hechar un vistazo. <span>Bienvenido.</span>
+		    		</h5>
+
+
+					<div name="iconos_contacto" style="margin-top: 5vw;">
+					    <div class="card-container blue-container">
+					            <div class="flex flex-wrap align-items-center justify-content-center">
+					                <div class="box shadow-3 m-3">					           
+					                	<a href="https://www.linkedin.com/in/yanet-de-los-%C3%A1ngeles-vasquez-5a97151b0/" target="_blank">
+					                		<img src="images/linkedin.png" class="icon" alt="linkedin">
+					                	</a>
+					                </div>
+					                <div class="box shadow-4 m-3">
+					                	<a href="images/QR.png" target="_blank">
+					                		<img src="images/instagram.png" class="icon" alt="instagram">
+					                	</a>
+					                </div>
+					                <div class="box shadow-5 m-3">
+					                	<a href="https://github.com/YANETdelosAngeles" target="_blank">
+					                		<img src="images/github.png" class="icon" alt="github">
+					                	</a>
+					                </div>
+					            </div>
+					    </div>
+					</div>
+
+		    	</div><!-- FIN Primera columna-->
+		    	<div class="col fotosDesktop"><!-- Segunda columna Vista Escritorio-->
+
+					<div class="w3-content w3-display-container">
+
+					<div class="w3-display-container mySlides w3-hover-grayscale">
+					  	<img src="images/yanet1.jpeg" style="width:100%">
+					   	<div class="w3-display-bottomright w3-container w3-padding-16 w3-black" style="opacity: 0.7; font-size: 1.5vw;font-family: 'Inconsolata', monospace;">
+    						Egresada de la Carrera de Ingenieria en computación(2015-2021).
+  						</div>
+					</div>
+
+					<div class="w3-display-container mySlides w3-hover-grayscale">
+					  	<img src="images/yanet4.jpeg" style="width:100%">
+					  	<div class="w3-display-bottomright w3-container w3-padding-16 w3-black" style="opacity: 0.7; font-size: 1.5vw;font-family: 'Inconsolata', monospace;">
+    						El área de mi interés va orientado al Frontend.
+  						</div>
+					</div>
+
+					<div class="w3-display-container mySlides w3-hover-grayscale">
+					  	<img src="images/yanet2.jpeg" style="width:100%">
+					  	<div class="w3-display-bottomright w3-container w3-padding-16 w3-black" style="opacity: 0.7; font-size: 1.5vw;font-family: 'Inconsolata', monospace;">
+    						En mis tiempos libres me gusta prácticar ciclismo, leer, desarrollar y afinar habilidades técnicas. 
+  						</div>
+					</div>
+
+
+					<div class="w3-display-container mySlides w3-hover-grayscale">
+					  	<img src="images/yanet3.jpeg" style="width:100%">
+					  	<div class="w3-display-bottomright w3-container w3-padding-16 w3-black" style="opacity: 0.7; font-size: 1.5vw;font-family: 'Inconsolata', monospace;">
+    						Actualmente(Abril 2022) estoy aprendiendo sobre el desarrollo UX.
+  						</div>
+					</div>
+
+					<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)" style="font-size: 2vw;">&#10094;</button>
+					<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)" style="font-size: 2vw">&#10095;</button>
+
+					</div>
+
+					<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
+
+						function plusDivs(n) {
+						  showDivs(slideIndex += n);
+						}
+
+						function showDivs(n) {
+						  var i;
+						  var x = document.getElementsByClassName("mySlides");
+						  if (n > x.length) {slideIndex = 1}
+						  if (n < 1) {slideIndex = x.length}
+						  for (i = 0; i < x.length; i++) {
+						     x[i].style.display = "none";  
+						  }
+						  x[slideIndex-1].style.display = "block";  
+						}
+					</script>
+
+				</div><!--FIN Segunda columna-->
+
+				<div class="col fotosMovil"><!-- Segunda columna Vista Movil-->
+				</div><!--FIN Segunda columna-->
+
+			</div>
+		</section>	
+	</div>
+
+	<section name="intereses">
+		<!-- cualidades -->
+		<div class="cinta">
+			<p>Intereses Personales</p>
+			<div class="grid">
+			    <div class="col-fixed">
+					<img src="images/prototipe.png" class="icon" alt="linkedin">
+					<p>Prototipado</p>
+			    </div>
+			    <div class="col-fixed">
+					<img src="images/bicycle.png" class="icon" alt="instagram">
+					<p>Ciclismo</p>
+			    </div>
+			    <div class="col-fixed">
+					<img src="images/videos.png" class="icon" alt="github">
+					<p>Videos</p>
+			    </div>
+			    <div class="col-fixed">
+					<img src="images/learn.png" class="icon" alt="github">
+					<p>Lectura</p>
+			    </div>
+			</div>
+
+		</div>
+	</section>
+	
+	<!-- scrollreveal -->
+	<script src="js/scrollreveal.min.js"></script>
+	<script src="js/scrollanimation_SM"></script>
+</body>
+</html>

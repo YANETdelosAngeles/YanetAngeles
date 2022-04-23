@@ -1,0 +1,13 @@
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 0,
+})
+
+sr.reveal(`#bloque1`)
+sr.reveal(`#bloque2`)
+sr.reveal(`.cinta,p`)
+sr.reveal(`h2`, {interval: 100, delay: 600})
+sr.reveal(`.col-fixed`, {interval: 100,delay: 600})

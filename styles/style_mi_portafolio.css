@@ -1,0 +1,367 @@
+body{
+	background-color: #000000;
+	padding: 0;
+}
+
+/*Estilos de la section nav*/
+
+
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.5vw;
+	padding: 3vw;
+	width: 20vw;
+	text-align:center;
+
+	transition: width .5s;
+}
+
+
+.menu{
+	transition-timing-function: ease;
+}
+
+nav a:hover{
+	background-color: rgba(196, 196, 196, 0.39);
+	color: #FFFFFF;
+
+	width: 25vw;
+}
+
+
+/*Estilos para la section contendio*/
+
+section[name="header"]{
+	padding-top: 4vw;
+	padding-right: 0vw;
+	padding-left: 0vw;
+	margin: 0vw;
+}
+
+/*Estilos header*/
+
+	/*Bloque 1 : texto y botones*/
+
+button{
+	background-color: transparent;
+	border: #FFFFFF 0.2vw solid;
+	padding: 0.5vw;
+	margin-top: 2vw;
+
+	display:scroll;
+	position:relative;
+	right: -3vw;
+}
+
+#bloque1 p{
+	color: #FFFFFF;
+	font-family: 'Inconsolata', monospace;
+	font-style: normal;
+	font-size: 2vw;
+	line-height: 4vw;
+	text-align: center;
+	width: 100%;
+}
+
+#bloque1{
+	background-color: #C4C4C4;
+	width: 20vw;
+	height: 25vw;
+	padding: 7vw 13vw 17vw 13vw; /*top left bottom rigth */
+
+	display:scroll;
+	position:relative;
+	right: -40vw;
+}
+
+button:hover{	
+	transition: background-color .7s;
+	background-color: #244462;
+	opacity: 0.7;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+.icon{
+	padding-top: 3vw;
+	height: 3vw;
+	width: 3vw;
+	position:relative;
+	right: -1vw;
+}
+
+	/*Bloque 2 : imagen*/
+
+#bloque2{
+	/*background:url('../images/yann.jpeg') no-repeat;
+	background-size: cover;*/
+
+	display:scroll;
+	position:relative;
+	right: 35vw;
+	top: 6vw;
+}
+
+#bloque2 img{
+	width: 35vw;
+	height: 45vw;
+	filter: grayscale(70%);
+}
+
+#bloque2 img:hover{
+	filter: blur(1.5px);
+}
+
+/*Estilos cualidades*/
+
+section[name="cualidades"]{
+	padding-top: 8vw;
+	justify-content: center;
+}
+
+section[name="cualidades"] .col-fixed{
+	width: 25%;
+}
+
+.cinta{
+	background-color: #244462;
+	padding: 3vw 0vw 3vw 0vw; /*top derecha bottom izquierda */ 
+}
+
+.cinta p{
+	color: #FFFFFF;
+	text-align: center;
+	font-family: 'Inconsolata', monospace;
+	font-size: 2vw;	
+}
+
+.cinta img{
+	margin-left: 8vw;
+	margin-right: 8vw;
+	margin-top: 2vw;
+	width: 4vw;
+	height: 4vw;
+}
+
+.col-fixed p{
+	color: #FFFFFF;
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.5vw;
+	/*margin-left: 4vw;*/
+}
+
+.icon{
+	transition: width 2s, height 2s, transform 2s ease;
+}
+
+.col-fixed img:hover,.col-2 img:hover{
+	width: 3vw;
+  height: 3vw;
+  transform: scale(1.5,1.5);
+}
+
+/*Estilos herramientas y lenguajes*/
+
+.container{
+	padding-top: 8vw;
+	padding-left: 12vw;
+	padding-right: 4vw;
+	padding-bottom: 2vw;
+	font-family: 'Inconsolata', monospace;
+}
+
+.container h2{
+	font-size: 2vw;
+	text-align: center;
+	padding-bottom: 3vw;
+	margin-right: 5vw;
+	color: #FFE052;
+}
+
+.container p{
+	color: #FFE052;
+	font-size: 1.5vw;
+}
+
+.container .grid{
+	display: flex;
+	justify-content: center;
+}
+
+.container .col-fixed{
+	width: 20%;
+}
+
+/* desactiva back vista movil*/
+section[name="back"]{
+	content-visibility: hidden;
+}
+
+
+/* Responsivo*/
+
+/* For small devices */
+@media screen and (max-width: 437px) { 
+	/* estilos nav*/
+	section[name="nav"]{
+		content-visibility: hidden;
+	}
+
+	section[name="back"]{
+		content-visibility: visible;
+		color: #FFFFFF;
+		margin-top: 0vw;
+		font-family: 'Inconsolata', monospace;
+	}
+
+	section[name="back"] img{
+		padding-top: 3vw;
+	}
+
+/* estilos header*/
+
+	/* estilos bloque 1 : letras y botones*/
+	
+	button{
+		font-size: 2vw;
+		right: -7vw;
+	}
+	
+	#bloque1 p{
+		font-style: normal;
+		font-size: 3vw;
+		line-height: 4vw;
+	}
+	
+	#bloque1{
+		background-color: #C4C4C4;
+		width: 30%;
+		height: 45vw;
+		padding: 7vw 8vw 7vw 8vw; /*top left bottom rigth */
+	
+		display:scroll;
+		position:relative;
+		right: -45vw;
+	}
+
+	.icon{
+		width: 5vw;
+		height: 5vw;
+		margin-left: 1.5vw;
+		margin-right: 1vw;
+	}
+
+	.flex-wrap {
+		flex-wrap: nowrap !important;
+	}
+	/* estilos bloque 2 : imagen*/
+
+	#bloque2{
+		display:scroll;
+		position:relative;
+		right: 40vw;
+		top: 30vw;
+	}
+	
+	#bloque2 img{
+		width: 40vw;
+		height: 55vw;
+		filter: grayscale(100%);
+	}
+	
+	/* estilos cualidades*/
+
+	section[name="cualidades"]{
+		padding-top: 8vw;
+		justify-content: center;
+	}
+
+	section[name="cualidades"] .col-fixed{
+		width: 50%;
+	}
+	
+	.cinta{
+		margin-top: 30vw;
+		background-color: #244462;
+		padding: 3vw 3vw 3vw 0vw; /*top derecha bottom izquierda */ 
+	}
+			
+	.cinta p{
+		color: #FFFFFF;
+		text-align: center;
+		font-family: 'Inconsolata', monospace;
+		font-size: 3vw;
+		margin-left: 9vw;
+	}
+	
+	.col-fixed p{
+		font-size: 2.5vw;
+		margin-left: 5vw;
+		text-align: center;
+	}
+
+	.cinta img{
+		margin-left: 50%;
+		margin-top: 4vw;
+		width: 7vw;
+		height: 7vw;
+	}
+
+	/* estilos herramientas y lenguajes */
+
+	.container{
+		padding-top: 8vw;
+		padding-left: 4vw;
+		padding-right: 4vw;
+		padding-bottom: 2vw;
+	}
+
+	.container h2{
+		font-size: 3vw;
+	}
+
+	.container p{
+		font-size: 2.5vw;
+		margin-right: 10vw;
+		margin-left: 0;
+	}
+
+	.container img{
+		width: 7vw;
+		height: 7vw;
+	}
+
+	
+	.container .grid{
+		display: flex;
+		justify-content: center;
+		margin-left: 5vw;
+	}
+	
+	.container .col-fixed{
+		width: 30%;
+	}
+	
+
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar{
+	width: .6rem;
+	border-radius: .5rem;
+	background-color: hsl(260, 8%, 66%);
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: .5rem;
+	background-color: hsl(260, 8%, 54%);
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: hsl(260, 8%, 44%);
+}

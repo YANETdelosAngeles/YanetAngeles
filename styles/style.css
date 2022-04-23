@@ -1,0 +1,192 @@
+body{
+	background-color: black;
+}
+
+img{
+  background-size: cover;
+  position: relative;
+  left: 20vw;
+  display: flex;
+  flex-flow: row;
+  width: 60%;
+  height: 60%;
+  padding-top: 5%;
+}
+
+button{
+	background: #000000;
+	align-items: center;
+
+	border-width: .12rem .12rem .12rem .12rem;
+	border-style: solid;
+	border-color: #FFFFFF;
+	border-radius: 0.2em;
+	
+	width: 20vw;
+  	height: 6vw;
+	transition: .5s;
+}
+
+#sobre_mi{
+  display:scroll;
+  position:fixed;
+  top: 40vw;
+  right: 75vw;
+}
+
+#mi_portafolio{
+  display:scroll;
+  position:fixed;
+  top: 40vw; /* top */
+  right: 5vw;  /* left */ 
+}
+
+a{
+	font-family: 'Inconsolata', monospace;
+	font-weight: bold;
+	font-size: 1.5vw;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: .5s;
+}
+
+h5{
+  display:scroll;
+  position:fixed;
+  bottom:-15%;
+  right: 25%;
+
+  width: 50%;
+  height: 60%;
+
+	color: #FFFFFF;
+	font-family: 'Inconsolata', monospace;
+	font-style: normal;
+	font-size: 2.8vw;
+	line-height: 2.5em;
+	text-align: center;
+	letter-spacing: 0.3em;
+}
+
+span{
+	color: #75E96D;
+	font-weight: bold;
+}
+
+button:hover{	
+	transition: background-color .5s;
+	background-color: #75E96D;
+	opacity: 0.7;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+img:hover {
+	filter: blur(2px);
+}
+
+
+/* Responsivo*/
+
+/* For small devices */
+@media screen and (max-width: 500px) { 
+	button{
+		background: #000000;
+		align-items: center;
+	
+		border-width: .1rem .1rem .1rem .1rem;
+		border-color: #FFFFFF;
+		border-radius: 0.2em;
+	
+		width: 30vw;
+	  	height: 6vw;
+		padding: 0;
+	}
+
+	#sobre_mi{
+		bottom: 20vw;
+		right: 65vw;
+	}
+
+	#sobre_mi>a{
+		left: 25%;
+	}
+	  
+	#mi_portafolio{
+		bottom: 20vw;
+		right: 5vw;  
+	}
+
+	#mi_portafolio>a{
+		left: 25%;
+	}
+	
+	a{
+		font-family: 'Inconsolata', monospace;
+		font-weight: 400;
+		font-size: 2.5vw;
+		color: #FFFFFF;
+		text-decoration: none;
+		transition: .3s;
+		position: fixed;
+		overflow: hidden;
+
+		top: 1vw;
+	}
+
+	h5{
+		display:scroll;
+		position:fixed;
+		bottom: 10%;
+		right: 25%;
+	  
+		width: 50%;
+	  
+		  color: #FFFFFF;
+		  font-family: 'Inconsolata', monospace;
+		  font-style: normal;
+		  font-size: 4vw;
+		  line-height: 2.5em;
+		  text-align: center;
+		  letter-spacing: 0.3em;
+	  }
+
+	img{
+		background-size: cover;
+		position: relative;
+		left: 15vw;
+		display: flex;
+		flex-flow: row;
+		width: 70%;
+		height: 70%;
+		padding-top: 15%;
+	}
+
+}
+
+@media screen and (max-width: 992px) {
+
+	h5{
+		  font-size: 2.8vw;
+	  }
+
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar{
+	width: .6rem;
+	border-radius: .5rem;
+	background-color: hsl(260, 8%, 66%);
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: .5rem;
+	background-color: hsl(260, 8%, 54%);
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: hsl(260, 8%, 44%);
+}
