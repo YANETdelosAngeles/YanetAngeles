@@ -6,8 +6,7 @@ const sr = ScrollReveal({
     delay: 0,
 })
 
-sr.reveal(`#bloque1`)
-sr.reveal(`#bloque2`)
-sr.reveal(`.cinta,p`)
-sr.reveal(`h2`, {interval: 100, delay: 600})
-sr.reveal(`.col-fixed`, {interval: 100,delay: 600})
+sr.reveal(`#bloque1 , #bloque1 p`)
+sr.reveal(`#bloque2`,{delay: 500})
+sr.reveal(`h2`, {interval: 100, delay: 500})
+sr.reveal(`.cinta .col-fixed , .cinta>p`, {interval: 100,delay: 600})

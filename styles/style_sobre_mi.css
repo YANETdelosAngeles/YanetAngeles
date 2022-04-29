@@ -1,6 +1,7 @@
+
+
 body{
-	background-color: #000000;
-	
+	background-color: #000000;	
 }
 
 /*Estilos de la section nav*/
@@ -128,6 +129,10 @@ section[name="back"]{
 	z-index: -1;
 }
 
+#check{
+	display: none;
+}
+
 
 /* Responsivo*/
 
@@ -140,9 +145,93 @@ section[name="back"]{
 
 	section[name="back"]{
 		content-visibility: visible;
-		color: #FFFFFF;
-		margin-top: 3vw;
+		background-color: transparent;
+		margin-top: 0vw;
 		font-family: 'Inconsolata', monospace;
+	}
+
+	/* enlaces */
+	.checkbtn{
+		display: block;
+		background-color: #244462;
+
+		/*border-bottom: 1px #ffffff solid;*/
+	}
+
+	nav img{
+		margin: 2vw 3vw 2vw 3vw;
+		width: 8vw;
+		height: 7vw;
+
+		transition: all 1s;
+	}
+
+	.menu{
+		width: 60%;
+		padding-top: 3vw;
+		height: 5vh;
+
+		background-color: #244462;
+		display: none;
+	}
+
+	.menu img{
+		width: 6vw;
+		height: 6vw;
+	}
+	
+	.uno{
+		position: absolute;
+		z-index: 1;
+	}
+
+	.dos{
+		margin-top: 11vw;
+		position: absolute;
+		z-index: 1;
+	}
+
+	.tres{
+		margin-top: 22vw;
+		position: absolute;
+		z-index: 1;
+	}
+
+	
+	.tira{
+		width: 60%;
+		padding: 5vw;
+		height: 80vh;
+
+		background-color: #244462;
+		display: none;
+		transition: all 0.5s;
+	}
+
+	.cuatro{
+		margin-top: 33vw;
+		position: absolute;
+		z-index: 1;
+	}
+
+	nav a{
+		font-size: 3vw;
+		text-align: left;
+		padding-left: 7vw;
+
+		color: #ffffff;
+		text-transform: uppercase;
+
+		display: flexbox;
+	}
+
+	.menu:hover{
+		background: #e9dc25;
+		transition: .2s;
+	}
+
+	#check:checked ~ a{
+		display: block;
 	}
 
 	/* estilos contenido segunda columna*/

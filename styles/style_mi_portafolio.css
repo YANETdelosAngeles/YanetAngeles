@@ -201,6 +201,9 @@ section[name="back"]{
 	content-visibility: hidden;
 }
 
+#check{
+	display: none;
+}
 
 /* Responsivo*/
 
@@ -213,22 +216,112 @@ section[name="back"]{
 
 	section[name="back"]{
 		content-visibility: visible;
-		color: #FFFFFF;
-		margin-top: 0vw;
+		margin-top: -2vw;
+		margin-left: -2vw;
+		margin-right: -2vw;
 		font-family: 'Inconsolata', monospace;
 	}
 
-	section[name="back"] img{
-		padding-top: 3vw;
+	/* enlaces */
+	.checkbtn{
+		display: block;
+		background-color: #244462;
+
+		/*border-bottom: 1px #ffffff solid;*/
 	}
 
-/* estilos header*/
+	nav img{
+		margin: 2vw 3vw 2vw 3vw;
+		width: 8vw;
+		height: 7vw;
+
+		transition: all 1s;
+	}
+
+	.menu{
+		width: 60%;
+		padding-top: 3vw;
+		height: 5vh;
+
+		background-color: #244462;
+		display: none;
+	}
+
+	.menu img{
+		margin: 2vw 3vw -1.5vw 3vw; /*pone a la misma altura el etxto con los iconos del nav*/
+
+		width: 6vw;
+		height: 6vw;
+	}
+	
+	.uno{
+		position: absolute;
+		z-index: 1;
+	}
+
+	.dos{
+		margin-top: 11vw;
+		position: absolute;
+		z-index: 1;
+	}
+
+	.tres{
+		margin-top: 22vw;
+		position: absolute;
+		z-index: 1;
+	}
+
+	
+	.tira{
+		width: 60%;
+		padding: 5vw;
+		height: 80vh;
+
+		background-color: #244462;
+		display: none;
+		transition: all 0.5s;
+	}
+
+	.cuatro{
+		margin-top: 33vw;
+		position: absolute;
+		z-index: 1;
+	}
+
+	nav a{
+		font-size: 3vw;
+		text-align: left;
+		padding-left: 7vw;
+
+		color: #ffffff;
+		text-transform: uppercase;
+
+		display: flexbox;
+	}
+
+	.menu:hover{
+		background: #e9dc25;
+		transition: .2s;
+	}
+
+	#check:checked ~ a{
+		display: block;
+	}
+
+/* estilos section header*/
 
 	/* estilos bloque 1 : letras y botones*/
+	.z-3 {
+		z-index: 0 !important;
+	}
 	
+	button a{
+		font-size: 2.5vw;
+	}
+
 	button{
-		font-size: 2vw;
-		right: -7vw;
+		right: -5vw;
+		padding: 0vw;
 	}
 	
 	#bloque1 p{
@@ -260,9 +353,12 @@ section[name="back"]{
 	}
 	/* estilos bloque 2 : imagen*/
 
+	.z-5 {
+		z-index: 0 !important;
+	}
+
 	#bloque2{
-		display:scroll;
-		position:relative;
+		/*display:scroll;*/
 		right: 40vw;
 		top: 30vw;
 	}
@@ -273,7 +369,7 @@ section[name="back"]{
 		filter: grayscale(100%);
 	}
 	
-	/* estilos cualidades*/
+	/* estilos section cualidades*/
 
 	section[name="cualidades"]{
 		padding-top: 8vw;
@@ -286,6 +382,8 @@ section[name="back"]{
 	
 	.cinta{
 		margin-top: 30vw;
+		margin-left: -2vw;
+		margin-right: -2vw;
 		background-color: #244462;
 		padding: 3vw 3vw 3vw 0vw; /*top derecha bottom izquierda */ 
 	}
@@ -311,7 +409,7 @@ section[name="back"]{
 		height: 7vw;
 	}
 
-	/* estilos herramientas y lenguajes */
+	/* estilos section herramientas y lenguajes */
 
 	.container{
 		padding-top: 8vw;

@@ -100,59 +100,57 @@ img:hover {
 		border-color: #FFFFFF;
 		border-radius: 0.2em;
 	
-		width: 30vw;
-	  	height: 6vw;
+		width: 40vw;
+	  	height: 12vw;
 		padding: 0;
 	}
 
 	#sobre_mi{
-		bottom: 20vw;
-		right: 65vw;
+		top: 90vw;
+		right: 55vw;
 	}
-
+	/*
 	#sobre_mi>a{
 		left: 25%;
-	}
+	}*/
 	  
 	#mi_portafolio{
-		bottom: 20vw;
+		/*bottom: 10vw;*/
+		top: 90vw;
 		right: 5vw;  
 	}
-
+	/*
 	#mi_portafolio>a{
 		left: 25%;
-	}
+	}*/
 	
 	a{
 		font-family: 'Inconsolata', monospace;
 		font-weight: 400;
-		font-size: 2.5vw;
+		font-size: 4vw;
 		color: #FFFFFF;
 		text-decoration: none;
 		transition: .3s;
-		position: fixed;
-		overflow: hidden;
+		/*position: fixed;
+		overflow: hidden;*/
 
 		top: 1vw;
+	}
+
+	.text-center h5{
+		font-size: 5vw;
 	}
 
 	h5{
 		display:scroll;
 		position:fixed;
-		bottom: 10%;
-		right: 25%;
+		top: 115vw;
+		right: 0%;
 	  
-		width: 50%;
-	  
-		  color: #FFFFFF;
-		  font-family: 'Inconsolata', monospace;
-		  font-style: normal;
-		  font-size: 4vw;
-		  line-height: 2.5em;
-		  text-align: center;
-		  letter-spacing: 0.3em;
+		width: 100%;
+		height: 0%;
 	  }
-
+	  
 	img{
 		background-size: cover;
 		position: relative;
@@ -161,15 +159,36 @@ img:hover {
 		flex-flow: row;
 		width: 70%;
 		height: 70%;
-		padding-top: 15%;
+		padding-top: 20%;
 	}
 
 }
 
 @media screen and (max-width: 992px) {
+	button{
+		width: 40vw;
+		height: 8vw;
+	}
+
+	#sobre_mi{
+		top: 50vw;
+		right: 55vw;
+	}
+
+	#mi_portafolio{
+		/*bottom: 10vw;*/
+		top: 50vw;
+		right: 5vw;  
+	}
+
+	a{
+		font-size: 4vw;
+	}
 
 	h5{
-		  font-size: 2.8vw;
+		font-size: 4vw;
+		width: 70%;
+		left: 15vw;
 	  }
 
 }
