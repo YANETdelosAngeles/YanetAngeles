@@ -163,7 +163,7 @@ img:hover {
 	}
 
 }
-
+/*
 @media screen and (max-width: 992px) {
 	button{
 		width: 40vw;
@@ -176,7 +176,6 @@ img:hover {
 	}
 
 	#mi_portafolio{
-		/*bottom: 10vw;*/
 		top: 50vw;
 		right: 5vw;  
 	}
@@ -191,7 +190,7 @@ img:hover {
 		left: 15vw;
 	  }
 
-}
+}*/
 
 /* scroll bar */
 
